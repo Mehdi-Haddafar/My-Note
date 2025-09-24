@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dataForEditTextLoginActivity"
+            type="com.example.notapplication.viewModel.ViewModelLoginActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4e2d4"
+        tools:context=".view.LoginActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewTextViewForSampleText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#934A27"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineTopAndBottomEditeText"
+            app:layout_constraintDimensionRatio="05.9"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@+id/guidelineTop" >
+
+        <EditText
+            android:id="@+id/userNameEditTextLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="username"
+            android:background="@drawable/shaype_edit_text"
+            android:layout_margin="@dimen/_3sdp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/userNameLoginActivity"
+            android:inputType="textPersonName"
+            android:textColor="#bea18f"
+            android:textColorHint="#bea18f"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPasswordEditTextLoginActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#934A27"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+            app:layout_constraintDimensionRatio="05.9"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@+id/guidelineTopAndBottomEditeText"  >
+
+        <EditText
+            android:id="@+id/passvordEditTextLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:autofillHints="password"
+            android:background="@drawable/shaype_edit_text"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/passLoginActivity"
+            android:inputType="numberPassword"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#bea18f"
+            android:textColorHint="#bea18f"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPassConfirmaitonEditTextLoginActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#934A27"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:layout_constraintDimensionRatio="05.9"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineForTextPassConfirmaiton"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/guidelineBottom"   >
+        <EditText
+            android:id="@+id/PassConfirmaitonEditTextLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="password"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/shaype_edit_text"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/TextPassConfirmaiton"
+            android:inputType="numberPassword"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#bea18f"
+            android:textColorHint="#bea18f"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enterButtonLoginActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/save_button_login_activity"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:onClick="@{() -> dataForEditTextLoginActivity.buttonSaveLoginActivity()}"
+            android:text="@string/enterButtonLoginActivity"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelineBottomSaveButton"
+            app:layout_constraintDimensionRatio="5.2"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintStart_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTopSaveButton"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBtnLockActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:shadowRadius="@integer/material_motion_duration_long_2"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#f8ece0"
+            app:cardCornerRadius="@dimen/_25sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottomImageView"
+            app:layout_constraintDimensionRatio="1.1"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewTextViewForSampleText"
+            app:layout_constraintStart_toStartOf="@+id/cardViewTextViewForSampleText"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTopImageView">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_3sdp"
+                android:backgroundTint="#f8ece0"
+                android:rotation="1"
+                app:cardCornerRadius="@dimen/_25sdp"
+                app:cardElevation="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#934A27"
+                    android:contentDescription="@string/note_book"
+                    android:src="@drawable/round_notes_24" />
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.025" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.795" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopAndBottomEditeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.28" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.53" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineForTextPassConfirmaiton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

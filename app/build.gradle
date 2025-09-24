@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.example.notapplication'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.notapplication"
+        minSdk 24
+        targetSdk 35
+        versionCode 19
+        versionName "2.2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+    // Core & UI
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.activity:activity-ktx:1.10.1'
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+
+    // Room
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.room:room-runtime:2.7.1'
+    implementation 'com.google.android.gms:play-services-basement:18.7.1'
+    implementation 'androidx.compose.material3:material3-jvmstubs:1.4.0-alpha17'
+    kapt 'androidx.room:room-compiler:2.7.1'
+
+    // Responsive dimensions
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+
+    implementation 'com.github.aliab:Persian-Date-Picker-Dialog:1.8.0'
+    implementation "com.github.samanzamani:PersianDate:1.7.1"
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    //work manager
+    implementation "androidx.work:work-runtime:2.10.2"
+}

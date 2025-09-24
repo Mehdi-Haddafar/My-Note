@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4e2d4 "
+    tools:context=".view.SettingTextActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnLockActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:backgroundTint="#934A27"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomSecurity"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewImageViewForIconAddTitle"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopSecurity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLockActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/background_ffor_setting_activity "
+            android:gravity="center"
+            android:text="@string/securityApp"
+            android:textColor="#a45d3f "
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:tooltipText="با زدن این دکمه میتوانید یوزرنیم و پسوورد  خود را وارد کنید
+            و از یاداشت های خود محافظت کنید"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImageViewForTextViewForSampleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#934A27"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomSampleText"
+        app:layout_constraintDimensionRatio="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopSampleText">
+
+        <ImageView
+            android:id="@+id/imageViewForTextViewForSampleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background_ffor_setting_activity"
+            android:src="@drawable/baseline_question_mark_24" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForBottomSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <View
+        android:id="@+id/dividerForTopSecurity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@drawable/divider"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineForBottomSecurity"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewBtnLockActivity" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForBottomSampleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <View
+        android:id="@+id/dividerForBottomSampleText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@drawable/divider"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomSampleText"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForBottomSampleText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopSampleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForBottomTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForBottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopTextViewTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopTextViewSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImageViewForIconAddTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#934A27"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomSecurity"
+        app:layout_constraintDimensionRatio="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopSecurity">
+
+        <ImageView
+            android:id="@+id/imageViewForQuestionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background_ffor_setting_activity"
+            android:src="@drawable/baseline_question_mark_24" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewseekBarTextSize"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#934A27"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForTopTextViewTableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopSeekBar">
+
+        <SeekBar
+            android:id="@+id/seekBarTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/background_ffor_setting_activity"
+            android:elevation="10dp"
+            android:max="40"
+            android:min="10"
+            android:outlineAmbientShadowColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:progress="10"
+            android:progressTint="@color/black"
+            android:thumbTint="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForRightQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForRightAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForLeftAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تنظیمات"
+        android:textColor="#934A27 "
+        android:textSize="@dimen/_35ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForTopSecurity"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewtextViewForSampleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:backgroundTint="#934A27"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomSampleText"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopSampleText">
+
+        <TextView
+            android:id="@+id/textViewForSampleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/background_ffor_setting_activity"
+            android:gravity="center"
+            android:text="@string/SampleText"
+            android:textColor="#a45d3f "
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_ffor_setting_activity"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomTabLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForLeftAll"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForRightAll"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopTabLayout"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorColor="#934A27"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="@dimen/_2sdp"
+        app:tabSelectedTextColor="#934A27 "
+        app:tabTextColor="#934A27 ">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پررنگ" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="معمولی" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مورب" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForTopTextViewForSelectTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="نوع متن ها"
+        android:textColor="#a45d3f "
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForLeftButton"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopTextViewForSelectTypeText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/save_button_login_activity"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForBottomLayout"
+        app:layout_constraintDimensionRatio="4.3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForLeftButton" />
+
+    <TextView
+        android:id="@+id/textViewForSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="تغییر اندازه متن"
+        android:textColor="#a45d3f"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForTopSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineForRightQuestion"
+        app:layout_constraintStart_toStartOf="@+id/guidelineForLeftButton"
+        app:layout_constraintTop_toTopOf="@+id/guidelineForTopTextViewSeekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

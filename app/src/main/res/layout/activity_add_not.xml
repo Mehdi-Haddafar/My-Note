@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4e2d4"
+        tools:context=".AddNotActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBtnLockActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:backgroundTint="#a45d3f"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottomShowEditeText"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineEndShowEditeText"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStartShowEditeText"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTopShowEditeText">
+
+            <TextView
+                android:id="@+id/addNotTextViewAddNotActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/background_ffor_setting_activity"
+                android:gravity="center"
+                android:text="@string/addNot"
+                android:textColor="#8c5c45"
+                android:textSize="@dimen/_30ssp"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="4.2" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewConstraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#934A27"
+            app:cardCornerRadius="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineTopCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidelineBottomCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/add_not_add_not_activity">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineForTopLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineForSetDesign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewEnterTitleEditTextAddNoteActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="#934A27"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideLineBottomeBottomeTextViews"
+                    app:layout_constraintDimensionRatio="4.9"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLineForSetDesign"
+                    app:layout_constraintStart_toStartOf="@+id/guideLineStartTextViews"
+                    app:layout_constraintTop_toTopOf="@+id/guideLineForTopLayout">
+
+                    <EditText
+                        android:id="@+id/enterTitleEditTextAddNoteActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/shaype_edit_text"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/enterTitle"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapWords"
+                        android:lines="1"
+                        android:maxLength="70"
+                        android:textColor="#934A27"
+                        android:textColorHint="#934A27"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/imageViewForIconAddTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/background_ffor_setting_activity"
+                    android:src="@drawable/sharp_contract_edit_24"
+                    app:layout_constraintBottom_toTopOf="@+id/guideLineBottomeBottomeTextViews"
+                    app:layout_constraintDimensionRatio="1.0"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLineEndTextViews"
+                    app:layout_constraintStart_toStartOf="@+id/guideLineForSetDesign"
+                    app:layout_constraintTop_toTopOf="@+id/guideLineForTopLayout" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintBottom_toTopOf="@+id/guideLineBottomTextViewDate"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLineEndTextViews"
+                    app:layout_constraintStart_toEndOf="@+id/guideLineStartTextViews"
+                    app:layout_constraintTop_toTopOf="@+id/guideLineBottomeBottomeTextViews">
+
+                    <!-- CardView برای متن تاریخ -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewForDateTextAddNoteActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:backgroundTint="#934A27"
+                        app:cardCornerRadius="@dimen/_12sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/forDateTextAddNoteActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:background="@drawable/shaype_edit_text"
+                            android:gravity="center"
+                            android:hint="تاریخی ثبت نشده است!"
+                            android:maxLines="1"
+                            android:textColor="#934A27"
+                            android:textColorHint="#934A27"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/imageViewForIconAddDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/background_ffor_setting_activity"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/sharp_date_range_24" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewForAlarmButtonAddNoteActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8"
+                        android:backgroundTint="#934A27"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/btnSetAlarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/shaype_edit_text"
+                            android:gravity="center"
+                            android:text="تنظیم برای یادآوری"
+                            android:textColor="#934A27"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/imageViewForIconSetAlarm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/background_ffor_setting_activity"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/baseline_alarm_24" />
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineBottomTextViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.36" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineBottomTextDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.9" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewEnterDesEditTextAddNoteActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:backgroundTint="#934A27"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/guideLineEndTextViews"
+                    app:layout_constraintBottom_toTopOf="@+id/guideLineBottomTextDescription"
+                    app:layout_constraintStart_toStartOf="@+id/guideLineStartTextViews"
+                    app:layout_constraintTop_toBottomOf="@+id/guideLineBottomTextViews">
+
+                    <EditText
+                        android:id="@+id/enterDesEditTextAddNoteActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/des_enter_add_not_activity"
+                        android:ems="10"
+                        android:gravity="top|center"
+                        android:hint="@string/enterDes"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="200"
+                        android:maxLines="10"
+                        android:scrollHorizontally="true"
+                        android:textColor="#934A27"
+                        android:textColorHint="#934A27"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineStartTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.02" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineBottomeBottomeTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.25" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineBottomTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.41" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLineEndTextViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.98" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/save_button_login_activity"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBottomSaveButton"
+            app:layout_constraintDimensionRatio="4.2"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEndShowEditeText"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStartShowEditeText"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTopSaveButton"
+            tools:ignore="MissingClass" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopShowEditeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomShowEditeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.175" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStartShowEditeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEndShowEditeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.83" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEndCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStartCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTopSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottomSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.94" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

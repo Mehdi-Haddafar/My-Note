@@ -1,0 +1,3 @@
+4-For phone number and password recovery
+5-add picture
+6-change search bar

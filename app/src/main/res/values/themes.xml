@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.NoApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- حذف نوار بالا و اکشن‌بار -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- رنگ‌های اصلی برنامه -->
+        <item name="colorPrimary">#bea18f</item>
+        <item name="colorPrimaryVariant">#bea18f</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="colorSecondary">#f4e2d4</item>
+        <item name="colorSecondaryVariant">#f4e2d4</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <!-- پس‌زمینه -->
+        <item name="android:windowBackground">#f4e2d4</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="backgroundColor">#f4e2d4</item>
+        <item name="titleTextColor">#AF5227</item>
+        <item name="android:textColor">#AF5227</item>
+        <item name="backgroundTint">#f4e2d4</item>
+    </style>
+
+    <style name="Theme.MySearchStyle" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="queryBackground">@color/white</item> <!-- پس‌زمینه جستجو -->
+        <item name="searchHintIcon">@color/black</item> <!-- آیکون -->
+    </style>
+
+</resources>

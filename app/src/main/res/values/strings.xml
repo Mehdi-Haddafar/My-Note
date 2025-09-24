@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Note</string>
+    <string name="userNameLoginActivity">نام کاربری</string>
+    <string name="passLoginActivity">پسورد</string>
+    <string name="enterButtonLoginActivity">ورود</string>
+    <string name="showMassageToastStartWith">با فاصله شروع نکنید</string>
+    <string name="showMassageToastSpase">"خالی نمیتوانید بگذارید</string>
+    <string name="showMassageToastMaghadirYekiNemibashad">"مقادیر یکی نمیباشد</string>
+    <string name="title">عنوان</string>
+    <string name="descriptioon">توضیحات</string>
+    <string name="addlistnot">addListNot</string>
+    <string name="todo">TODO</string>
+    <string name="deletrecycleractivity">deletRecyclerActivity</string>
+    <string name="enterTitle">عنوان را وارد کنید</string>
+    <string name="enterDes">توضیحات را وارد کنید</string>
+    <string name="save">ذخیره</string>
+    <string name="notNew">یادداشت جدید</string>
+    <string name="addNot">یادداشت جدید</string>
+    <string name="notNot">یادداشت موجود نیست!</string>
+    <string name="note_book">Note Book</string>
+    <string name="show_note">Show Note</string>
+    <string name="update_note">update note</string>
+    <string name="delete_note">delete note</string>
+    <string name="NOTHING">یادداشتی وجود ندارد !</string>
+    <string name="TextPassConfirmaiton">پسورد را دوباره وارد کنید</string>
+    <string name="setting">setting</string>
+    <string name="securityApp">قفل کردن برنامه</string>
+    <string name="SampleText">متن نمونه</string>
+</resources>
